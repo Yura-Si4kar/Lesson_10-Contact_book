@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/scripts.js" async></script>
+    <title>Сontact book</title>
+</head>
+
+<body class="body">
+    <div class="container">
+            <table class="table">
+                <tr class="table_items">
+                    <td>Name</td>
+                    <td>Surname</td>
+                    <td>Phone_number</td>
+                    <td>Delete</td>
+                </tr>
+            </table>
+            <h1 class="error">Пустая строка! Заполните все строки!</h1>
+        <form class="input_elements">
+            <input type="text" class="input_name" placeholder="Write yuor name">
+            <input type="text" class="input_surname" placeholder="Write yuor surname">
+            <input type="text" class="input_number" placeholder="Write yuor Phone number">
+            <button type="submit" class="sending_btn">По місцях!!!</button>
+        </form>
+        <script type="text/template" class="table_template">
+                    <tr class="table_items">
+                        <td>{{Name}}</td>
+                        <td>{{Surname}}</td>
+                        <td>{{Phone_number}}</td>
+                        <td>
+                            <button class="delete_btn">Удалить контакт</button>
+                        </td>
+                    </tr>
+            </script>
+    </div>
+</body>
+
+</html>

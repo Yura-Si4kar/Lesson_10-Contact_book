@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 20px 0 0;
+}
+
+.table {
+	width: 88%;
+	border-collapse: collapse;
+}
+
+.table_items th,
+.table_items td {
+	border: 1px solid black;
+	padding: 10px;
+    text-align: center;
+}
+
+.input_elements {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.input_elements input {
+    margin-right: 100px;
+}
+
+.delete_btn {
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    padding: 6px 10px;
+}
+
+.error{
+    color: red;
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+}
+
+.error.show {
+    display: block;
+}
