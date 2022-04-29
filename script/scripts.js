@@ -18,12 +18,12 @@ function onAddTable(e) {
     if (validateInput(true)) {
         e.preventDefault();
         showError();
-        cleanStrings();
+        clearInputs();
     } else {
         e.preventDefault();
         remuveError();
         addTable();
-        cleanStrings();
+        clearInputs();
     }
 }
 
@@ -63,7 +63,7 @@ function validateInput() {
     }
 }
 
-function cleanStrings() {
+function clearInputs() {
     inputName.value = '';
     inputSurname.value = '';
     inputPhoneNumber.value = '';

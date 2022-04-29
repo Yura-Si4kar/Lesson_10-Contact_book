@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+.body {
+    background-color: aquamarine;
+}
+
 .container {
     max-width: 1300px;
     padding: 20px 0 0;
@@ -29,13 +33,38 @@
 
 .input_elements input {
     margin-right: 100px;
+    background-color: rgb(196, 249, 231);
+}
+
+.sending_btn {
+    background-color: aqua;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+.sending_btn:hover {
+    background-color: rgb(4, 195, 195);
+}
+
+.sending_btn:active {
+    background-color: rgb(2, 175, 175);
 }
 
 .delete_btn {
     cursor: pointer;
     background-color: red;
     border: none;
-    padding: 6px 10px;
+    padding: 3px 8px;
+    border-radius: 15px;
+}
+
+.delete_btn:hover {
+    background-color: rgb(207, 4, 4);
+}
+
+.delete_btn:active {
+    background-color: rgb(187, 3, 3);
 }
 
 .error{
