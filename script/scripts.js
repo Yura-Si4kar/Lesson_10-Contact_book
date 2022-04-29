@@ -6,7 +6,7 @@ const TABLE_TEMPLATE = document.querySelector('.table_template').innerHTML;
 const addBtn = document.querySelector('.sending_btn');
 const inputName = document.querySelector('.input_name');
 const inputSurname = document.querySelector('.input_surname');
-const inputPhoneNumber = document.querySelector('.input_number')
+const inputPhoneNumber = document.querySelector('.input_phone_number')
 const taskList = document.querySelector('.table');
 const errorEl = document.querySelector('.error');
 
