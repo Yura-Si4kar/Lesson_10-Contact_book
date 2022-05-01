@@ -15,16 +15,16 @@ addBtn.addEventListener('click', onAddTable);
 taskList.addEventListener('click', onTableElementsClick);
 
 function onAddTable(e) {
-    if (validateInput(true)) {
-        e.preventDefault();
+    if (validateInput()) {
         showError();
         clearInputs();
     } else {
-        e.preventDefault();
         remuveError();
         addTable();
-        clearInputs();
     }
+
+    e.preventDefault();
+    clearInputs();
 }
 
 function addTable() {
@@ -57,9 +57,7 @@ function validateInput() {
     const contactPhoneNumber = getInputPhoneNumber();
 
     if (contactName==='' || contactSurname==='' || contactPhoneNumber==='') {
-        return true;
-    } else {
-        return false;
+        return (contactName==='' || contactSurname==='' || contactPhoneNumber==='')
     }
 }
 
